@@ -1,18 +1,23 @@
-import React from "react";
+import React, {ChangeEvent, MouseEvent} from "react";
 
 
 export const User = () => {
 
-    const deletedUser = () => {
-    alert('deleted user?')
+    const deletedUser = (event: MouseEvent<HTMLButtonElement>) => {
+    alert(event.currentTarget.name)
 
     }
-    const saveUser = () => {
-        alert('save user?')
 
+    const onAgeChange =(event: ChangeEvent<HTMLInputElement>)=>{
+        console.log('age changed:' + event.currentTarget.value)
     }
+
+    // const saveUser = () => {
+    //     alert('save user?')
+    // }
     return <div>Dimych
-        <button onClick={deletedUser}>delete</button>
-        <button onClick={saveUser}>save</button>
+        <input type="number" onChange={onAgeChange}/>
+        <button name={"delete"} onClick={deletedUser}>delete +</button>
+        <button name={"save"} onClick={deletedUser}>save +</button>
     </div>
 }
