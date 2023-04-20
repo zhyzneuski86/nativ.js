@@ -1,4 +1,6 @@
-test("should take courses chipper 160", ()=>{
+import {CoursesType} from "./04";
+
+test ("should take courses chipper 160", ()=>{
     const courses = [
         {title: "CSS", price: 110},
         {title: "JS", price: 200},

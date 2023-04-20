@@ -1,5 +1,5 @@
 
-type CoursesType = {
+export type CoursesType = {
     title: string
     price: number
 }
@@ -17,4 +17,5 @@ const chipCourses = [
     {title: "CSS", price: 110},
     {title: "REACT", price: 150},
 ]
+export {}
 

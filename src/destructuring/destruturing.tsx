@@ -3,7 +3,7 @@ import React from "react";
 export type ManType = {
     name: string
     age: number
-    lessons: Array<LessonsType>
+    lessons: Array<any>
     address: {
         street: {
             title: string

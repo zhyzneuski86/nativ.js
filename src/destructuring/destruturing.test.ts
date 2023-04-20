@@ -1,4 +1,4 @@
-type LessonsType = {
+export type LessonsType = {
     title: string
 }
 
